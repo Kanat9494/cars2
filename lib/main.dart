@@ -19,10 +19,11 @@ class MyApp extends StatelessWidget {
         //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         //   useMaterial3: true,
         // ),
+        debugShowCheckedModeBanner: false,
         home: RepositoryProvider(
-      create: (context) => UserRepository(),
-      child: const HomePage(),
-    ));
+          create: (context) => UserRepository(),
+          child: const HomePage(),
+        ));
   }
 }
 
